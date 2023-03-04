@@ -17,6 +17,13 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+### project
+!application-oauth.properties
+*.properties
+*.yml
+*.json
+resources
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -25,6 +32,7 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -35,3 +43,4 @@ out/
 
 ### VS Code ###
 .vscode/
+
