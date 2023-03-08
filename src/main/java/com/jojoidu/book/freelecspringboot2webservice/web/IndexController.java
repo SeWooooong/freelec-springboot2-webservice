@@ -1,9 +1,11 @@
 package com.jojoidu.book.freelecspringboot2webservice.web;
 
+import com.jojoidu.book.freelecspringboot2webservice.config.auth.LoginUser;
 import com.jojoidu.book.freelecspringboot2webservice.config.auth.dto.SessionUser;
 import com.jojoidu.book.freelecspringboot2webservice.domain.posts.PostsService;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,10 +19,8 @@ public class IndexController {
     private final PostsService postsService;
     private final HttpSession httpSession;
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
-        System.out.println(user);
         if(user != null){
             model.addAttribute("userName",user.getName());
         }
