@@ -31,9 +31,8 @@ on:
     branches: [ "master" ]
 
 env:
-  AWS_REGION: ap-northeast-2                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
-  S3_BUCKET_NAME: my-github-actions-s3-bucket
+  AWS_REGION: ap-northeast-2
+  S3_BUCKET_NAME: heron-github-actions-s3-bucket
   CODE_DEPLOY_APPLICATION_NAME: heron-codedeploy-app
   CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: Heron-codedeploy-deployment-group
 
