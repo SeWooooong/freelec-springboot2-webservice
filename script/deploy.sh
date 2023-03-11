@@ -44,4 +44,4 @@ echo "> JAR Name: $JAR_NAME"
 nohup java -jar \
 	-Dspring.config.location=classpath:/application.properties,/home/ubuntu/app/application-oauth.properties,/home/ubuntu/app/application-real-db.properties,classpath:/application-real.properties \
 	-Dspring.profiles.actice=real \
-	$REPOSITORY/$JAR_NAME 2>&1 &
+	$JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
