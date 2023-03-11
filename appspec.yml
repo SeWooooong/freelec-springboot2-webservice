@@ -13,7 +13,7 @@ permissions:
     group: ubuntu
 
 hooks:
-  ApplicationStart:
+  AfterInstall:
     - location: /home/ubuntu/app/step1/deploy.sh
       timeout: 60
       runas: ubuntu
