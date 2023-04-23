@@ -1,4 +1,4 @@
-package com.jojoidu.book.freelecspringboot2webservice.web.dto;
+package com.jojoidu.book.freelecspringboot2webservice.domain.web.dto;
 
 import lombok.Builder;
 import lombok.Getter;

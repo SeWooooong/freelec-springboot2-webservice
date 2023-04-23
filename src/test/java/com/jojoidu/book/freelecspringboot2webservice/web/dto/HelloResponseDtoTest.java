@@ -1,5 +1,6 @@
 package com.jojoidu.book.freelecspringboot2webservice.web.dto;
 
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.HelloResponseDto;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

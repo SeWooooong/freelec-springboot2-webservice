@@ -1,9 +1,9 @@
-package com.jojoidu.book.freelecspringboot2webservice.web;
+package com.jojoidu.book.freelecspringboot2webservice.domain.web;
 
 import com.jojoidu.book.freelecspringboot2webservice.domain.posts.PostsService;
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsResponseDto;
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsSaveRequestDto;
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsUpdateRequestDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.PostsResponseDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.PostsUpdateRequestDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

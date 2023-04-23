@@ -1,11 +1,10 @@
 package com.jojoidu.book.freelecspringboot2webservice.web;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jojoidu.book.freelecspringboot2webservice.domain.posts.Posts;
 import com.jojoidu.book.freelecspringboot2webservice.domain.posts.PostsRepository;
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsSaveRequestDto;
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsUpdateRequestDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.PostsSaveRequestDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,14 +17,12 @@ import org.springframework.http.*;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MockMvcBuilder;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;

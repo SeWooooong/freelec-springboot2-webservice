@@ -1,6 +1,6 @@
-package com.jojoidu.book.freelecspringboot2webservice.web;
+package com.jojoidu.book.freelecspringboot2webservice.domain.web;
 
-import com.jojoidu.book.freelecspringboot2webservice.web.dto.HelloResponseDto;
+import com.jojoidu.book.freelecspringboot2webservice.domain.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
